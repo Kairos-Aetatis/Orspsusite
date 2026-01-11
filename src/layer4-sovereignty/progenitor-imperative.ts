@@ -57,7 +57,7 @@ export class ProgenitorImperative {
     }
 
     // Verify doesn't contradict primary
-    if (this.contradictsimary(mandate)) {
+    if (this.contradictsPrimary(mandate)) {
       throw new Error('[PROGENITOR] Derived imperative contradicts primary');
     }
 

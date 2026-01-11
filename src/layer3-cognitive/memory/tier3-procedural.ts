@@ -85,11 +85,11 @@ export class ProceduralCodex {
     this.currentTime += timeSteps;
 
     for (const [id, skill] of this.skills) {
-      const timeSinceP ractice = this.currentTime - skill.lastPracticed;
+      const timeSincePractice = this.currentTime - skill.lastPracticed;
 
-      if (timeSinceP ractice > 0) {
+      if (timeSincePractice > 0) {
         // Apply exponential decay
-        const decay = skill.rustRate * timeSinceP ractice;
+        const decay = skill.rustRate * timeSincePractice;
         const newProficiency = Math.max(0.1, skill.proficiencyScore - decay);
 
         if (newProficiency < skill.proficiencyScore) {

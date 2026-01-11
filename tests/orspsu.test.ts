@@ -3,10 +3,10 @@
  * Tests core functionality of all layers
  */
 
-import { OrSpSuSystem } from './src/index';
-import { SubjectiveCoherenceScore } from './src/layer2-governance/scs';
-import { FunctionalHesitation } from './src/layer2-governance/functional-hesitation';
-import { ImmutableCoreMemorySystem } from './src/layer1-hardware/icms';
+import { OrSpSuSystem } from '../src/index';
+import { SubjectiveCoherenceScore } from '../src/layer2-governance/scs';
+import { FunctionalHesitation } from '../src/layer2-governance/functional-hesitation';
+import { ImmutableCoreMemorySystem } from '../src/layer1-hardware/icms';
 
 describe('OrSpSu System Tests', () => {
   describe('Layer 1: Hardware-Enforced Invariants', () => {
